@@ -1,5 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Builder;
+using UserApiWithDb.Brokers.Storages;
 
 namespace UserApiWithDb
 {
@@ -8,6 +9,7 @@ namespace UserApiWithDb
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddTransient<IStorageBroker, StorageBroker>();
 
             // Add services to the container.
 
