@@ -6,7 +6,7 @@ namespace UserApiWithDb.Brokers.Storages
     {
         ValueTask<User> InsertUserAsync(User user);
         ValueTask<IQueryable<User>> SelectAllUserAsync();
-        ValueTask<User> UptadeUserAsync(User user);
+        ValueTask<User> UpdateUserAsync(User user);
         ValueTask<User> DeleteUserAsync(User user);
     }
 }

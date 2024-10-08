@@ -12,8 +12,8 @@ namespace UserApiWithDb.Brokers.Storages
         public async ValueTask<IQueryable<User>> SelectAllUserAsync() => 
             SelectAllAsync<User>();
 
-        public async ValueTask<User> UptadeUserAsync(User user) =>
-            await UptadeUserAsync(user);
+        public async ValueTask<User> UpdateUserAsync(User user) =>
+            await UpdateUserAsync(user);
         
         public async ValueTask<User> DeleteUserAsync(User user) =>
             await DeleteUserAsync(user);        
